@@ -18,9 +18,8 @@ jobs:
         python-version: ${{ matrix.python-version }}
     - name: Install nox
       run: |
-        pip install nox
-        free -m
-        df -h
+        pip install nox poetry
+        echo "number of processors = $(nproc)"
     - name: Test with pytest in nox
       run: |
         nox -s tests   
