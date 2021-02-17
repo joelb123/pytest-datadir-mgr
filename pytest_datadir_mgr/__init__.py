@@ -8,7 +8,6 @@ import hashlib
 import os
 import shutil
 from collections import OrderedDict
-from datetime import datetime
 from pathlib import Path
 from types import SimpleNamespace
 
@@ -31,11 +30,9 @@ __version__ = "1.2.5"
 
 
 class DataDirManager:
-
     """Download, cache, and optionally verify and gzip test files from a specified URL."""
 
     class NameObject:
-
         """Holder of names for module, class, and function that mimics request."""
 
         def __init__(self, module, cls=None, func=None):
@@ -51,11 +48,9 @@ class DataDirManager:
                 self.function = SimpleNamespace(__name__=None)
 
     class ScopedDataDirDict(dict):
-
         """Dictionary of paths specifying test data directories at different scopes."""
 
         class Scope:
-
             """Class holding a path and a name."""
 
             def __init__(self, basepath, name):
@@ -386,7 +381,8 @@ class DataDirManager:
 
 @pytest.fixture
 def datadir_mgr(request, tmp_path, pytestconfig):
-    """Enable downloading and caching of data files.
+    """
+    Enable downloading and caching of data files.
 
     Inspired by the `pytest-datadir-ng plugin <https://github.com/Tblue/pytest-datadir-ng>`_,
     it implements the same directory hierarchy.

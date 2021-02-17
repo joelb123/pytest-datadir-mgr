@@ -19,7 +19,6 @@ jobs:
     - name: Install nox
       run: |
         pip install nox poetry
-        echo "number of processors = $(nproc)"
     - name: Test with pytest in nox
       run: |
         nox -s tests   

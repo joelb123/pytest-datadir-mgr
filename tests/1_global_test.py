@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Tests at global sope"""
+"""Tests at global scope."""
 # standard library imports
 import os
 import shutil

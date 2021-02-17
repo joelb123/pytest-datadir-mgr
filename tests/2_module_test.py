@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Tests at module scope"""
+"""Tests at module scope."""
 # standard library imports
 from pathlib import Path
 

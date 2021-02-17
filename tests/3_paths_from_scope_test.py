@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Test of paths from scope"""
+"""Test of paths from scope."""
 # standard library imports
 from pathlib import Path
 
