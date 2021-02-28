@@ -1,25 +1,36 @@
 name: tests
-
-on: [push]
-
+on: [push, pull_request]
 jobs:
-  build:
-
-    runs-on: ubuntu-latest
+  tests:
     strategy:
+      fail-fast: false
       matrix:
-        python-version: [3.8]
-
+        include:
+          - { python-version: 3.9, os: ubuntu-latest }
+          - { python-version: 3.9, os: windows-latest }
+          - { python-version: 3.9, os: macos-latest }
+          - { python-version: 3.8, os: ubuntu-latest }
+    name: Python ${{ matrix.python-version }} (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Python ${{ matrix.python-version }}
-      uses: actions/setup-python@v2
+    - uses: actions/checkout@v2.3.4
+    - uses: actions/setup-python@v2.2.1
       with:
         python-version: ${{ matrix.python-version }}
-    - name: Install nox
+    - name: Install tools using pip
       run: |
-        pip install nox poetry
-    - name: Test with pytest in nox
+        pip install --constraint=.github/workflows/constraints.txt pip
+        pip install --constraint=.github/workflows/constraints.txt nox nox-poetry poetry pipx
+    - name: Test with pytest using nox
       run: |
-        nox -s tests   
-
+        poetry run nox --force-color -s tests
+    - name: Install dependencies using Poetry
+      run: poetry install --ansi
+    - name: Upload coverage to Codecov
+      if: ${{ matrix.os == 'ubuntu-latest' && matrix.python-version == '3.9' }}
+      uses: codecov/codecov-action@v1
+      with:
+        fail_ci_if_error: false
+        flags: unittests
+        env_vars: OS, PYTHON
+        name: codecov-umbrella
