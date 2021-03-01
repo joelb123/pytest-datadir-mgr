@@ -48,7 +48,7 @@ datadir-mgr plugin for pytest
 .. badges-end
 
 .. image:: https://raw.githubusercontext.com/joelb123/pytest-datadir-mgr/main/docs/_static/logo.png
-   :target: https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/LICENSE.artwork.txt
+   :target: https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/main/LICENSE.artwork.txt
    :alt: Logo credit Jørgen Stamp, published under a Creative Commons Attribution 2.5 Denmark License.
 
 The ``datadir-mgr`` plugin for pytest_ provides the ``datadir_mgr`` fixture which
@@ -84,8 +84,7 @@ five methods useful for adding to the test data stored in the repository:
 
 Prerequisites
 -------------
-Python 3.6 or greater is required.
-This package is tested under Linux and MacOS using Python 3.8.
+Python 3.6 or greater is required.  This package is tested under Linux and MacOS using Python 3.9.
 
 Installation for Users
 ----------------------
@@ -113,44 +112,4 @@ Test ``datadir-mgr`` with ``poetry``: ::
 
     poetry run pytest -s
 
- |pypi| 
-|downloads| |
-| License           | |license|   |
-| Build             | |build|     |
-| Coverage          | |coverage|  |
-| Code Grade        | |codacy|    |
-| Issues            | |issues|    |
-
 .. _pytest: http://pytest.org/
-
-.. |pypi| image:: https://img.shields.io/pypi/v/pytest-datadir-mgr.svg
-    :target: https://pypi.python.org/pypi/pytest-datadir-mgr
-    :alt: Python package
-
-.. |repo| image:: https://img.shields.io/github/commits-since/joelb123/pytest-datadir-mgr/0.1.0.svg
-    :target: https://github.com/joelb123/pytest-datadir-mgr
-    :alt: GitHub repository
-
-.. |license| image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
-    :target: https://github.com/joelb123/pytest-datadir-mgr/blob/master/LICENSE.txt
-    :alt: License terms
-
-.. |build| image:: https://github.com/joelb123/pytest-datadir-mgr/workflows/tests/badge.svg
-    :target:  https://github.com/joelb123/pytest-datadir-mgr.actions
-    :alt: GitHub Actions
-
-.. |codacy| image:: https://api.codacy.com/project/badge/Grade/f306c40d604f4e62b8731ada896d8eb2
-    :target: https://www.codacy.com/gh/joelb123/pytest-datadir-mgr?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joelb123/pytest-datadir-mgr&amp;utm_campaign=Badge_Grade
-    :alt: Codacy.io grade
-
-.. |coverage| image:: https://codecov.io/gh/joelb123/pytest-datadir-mgr/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/joelb123/pytest-datadir-mgr
-    :alt: Codecov.io test coverage
-
-.. |issues| image:: https://img.shields.io/github/issues/joelb123/pytest-datadir-mgr.svg
-    :target:  https://github.com/joelb123/pytest-datadir-mgr/issues
-    :alt: Issues reported
-
-.. |downloads| image:: https://pepy.tech/badge/pytest_datadir_mgr
-     :target: https://pepy.tech/project/pytest_datadir_mgr
-     :alt: Download stats
