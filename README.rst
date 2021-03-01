@@ -9,7 +9,7 @@ datadir-mgr plugin for pytest
     :target: https://pypi.python.org/pypi/pytest-datadir-mgr
     :alt: Python package
 
-.. |Python Version| image:: https://img.shields.io/pypi/pytest-datadir-mgr
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/pytest-datadir-mgr
    :target: https://pypi.python.org/pypi/pytest-datadir-mgr
    :alt: Supported Python Versions
 
@@ -47,7 +47,7 @@ datadir-mgr plugin for pytest
 
 .. badges-end
 
-.. image:: https://raw.githubusercontext.com/joelb123/pytest-datadir-mgr/main/docs/_static/logo.png
+.. image:: https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/main/docs/_static/logo.png
    :target: https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/main/LICENSE.artwork.txt
    :alt: Logo credit Jørgen Stamp, published under a Creative Commons Attribution 2.5 Denmark License.
 

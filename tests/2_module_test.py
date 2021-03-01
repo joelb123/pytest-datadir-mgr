@@ -14,7 +14,7 @@ from . import TESTFILE
 NEWMSG = "data saved from test_in_tmp_dir\n"
 LOGPATH = Path("test_in_tmp_dir.log")
 BSD3 = (Path(__file__).parent.parent / DLFILE).open("r").read()
-REPO_URL = "https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/master/"
+REPO_URL = "https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/main/"
 
 
 def test_function_scope(datadir_mgr):
