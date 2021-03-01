@@ -1,5 +1,55 @@
+=============================
 datadir-mgr plugin for pytest
 =============================
+.. badges-begin
+| |pypi| |Python Version| |repo| |downloads| |dlrate|
+| |license|  |build| |coverage| |codacy| |issues| 
+
+.. |pypi| image:: https://img.shields.io/pypi/v/pytest-datadir-mgr.svg
+    :target: https://pypi.python.org/pypi/pytest-datadir-mgr
+    :alt: Python package
+
+.. |Python Version| image:: https://img.shields.io/pypi/pytest-datadir-mgr
+   :target: https://pypi.python.org/pypi/pytest-datadir-mgr
+   :alt: Supported Python Versions
+
+.. |repo| image:: https://img.shields.io/github/last-commit/joelb123/pytest-datadir-mgr
+    :target: https://github.com/joelb123/pytest-datadir-mgr
+    :alt: GitHub repository
+
+.. |downloads| image:: https://pepy.tech/badge/pytest-datadir-mgr
+     :target: https://pepy.tech/project/pytest_datadir_mgr
+     :alt: Download stats
+
+.. |dlrate| image:: https://img.shields.io/pypi/dm/pytest-datadir-mgr
+   :target: https://github.com/joelb123/pytest-datadir-mgr
+   :alt: PYPI download rate
+
+.. |license| image:: https://img.shields.io/badge/License-BSD%203--Clause-blue.svg
+    :target: https://github.com/joelb123/pytest-datadir-mgr/blob/master/LICENSE.txt
+    :alt: License terms
+
+.. |build| image:: https://github.com/joelb123/pytest-datadir-mgr/workflows/tests/badge.svg
+    :target:  https://github.com/joelb123/pytest-datadir-mgr.actions
+    :alt: GitHub Actions
+
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/f306c40d604f4e62b8731ada896d8eb2
+    :target: https://www.codacy.com/gh/joelb123/pytest-datadir-mgr?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joelb123/pytest-datadir-mgr&amp;utm_campaign=Badge_Grade
+    :alt: Codacy.io grade
+
+.. |coverage| image:: https://codecov.io/gh/joelb123/pytest-datadir-mgr/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/joelb123/pytest-datadir-mgr
+    :alt: Codecov.io test coverage
+
+.. |issues| image:: https://img.shields.io/github/issues/joelb123/pytest-datadir-mgr.svg
+    :target:  https://github.com/joelb123/pytest-datadir-mgr/issues
+    :alt: Issues reported
+
+.. badges-end
+
+.. image:: https://raw.githubusercontext.com/joelb123/pytest-datadir-mgr/main/docs/_static/logo.png
+   :target: https://raw.githubusercontent.com/joelb123/pytest-datadir-mgr/LICENSE.artwork.txt
+   :alt: Logo credit Jørgen Stamp, published under a Creative Commons Attribution 2.5 Denmark License.
 
 The ``datadir-mgr`` plugin for pytest_ provides the ``datadir_mgr`` fixture which
 allow test functions to easily download data files and cache generated data files
@@ -63,23 +113,13 @@ Test ``datadir-mgr`` with ``poetry``: ::
 
     poetry run pytest -s
 
-Project Status
---------------
-+-------------------+-------------+
-| Latest Release    | |pypi|      |
-+-------------------+-------------+
-| Activity          | |downloads| |
-+-------------------+-------------+
+ |pypi| 
+|downloads| |
 | License           | |license|   |
-+-------------------+-------------+
 | Build             | |build|     |
-+-------------------+-------------+
 | Coverage          | |coverage|  |
-+-------------------+-------------+
 | Code Grade        | |codacy|    |
-+-------------------+-------------+
 | Issues            | |issues|    |
-+-------------------+-------------+
 
 .. _pytest: http://pytest.org/
 
