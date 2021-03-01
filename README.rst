@@ -82,34 +82,15 @@ five methods useful for adding to the test data stored in the repository:
 - The ``paths_from_scope`` returns a list of all paths to files from a specified scope.
 
 
-Prerequisites
--------------
-Python 3.6 or greater is required.  This package is tested under Linux and MacOS using Python 3.9.
-
 Installation for Users
 ----------------------
 Install via pip ::
 
      pip install pytest-datadir-mgr
 
-For Developers
---------------
-If you plan to develop ``datadir_mgr``, you'll need to install
-the `poetry <https://python-poetry.org>`_ dependency manager.
-If you haven't previously installed ``poetry``, execute the command: ::
-
-    curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-
-Next, get the master branch from GitHub ::
-
-	git clone https://github.com/joelb123/pytest-datadir-mgr.git
-
-Change to the ``datadir-mgr/`` directory and install with poetry: ::
-
-	poetry install -v
-
-Test ``datadir-mgr`` with ``poetry``: ::
-
-    poetry run pytest -s
+Prerequisites
+-------------
+Python 3.6 or greater is required.  This package is tested under Linux, MacOS, and Windows
+using Python 3.9.
 
 .. _pytest: http://pytest.org/
