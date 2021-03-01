@@ -52,7 +52,7 @@ pytest11 = { datadir_mgr = "pytest_datadir_mgr" }
 
 [tool.black]
 line-length = 79
-target-version = ['py36', 'py37', 'py38', 'py39']
+target-version = ['py36', 'py37', 'py38']
 include = '\.pyi?$'
 exclude = '''
 /(

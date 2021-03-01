@@ -384,6 +384,10 @@ def datadir_mgr(request, tmp_path, pytestconfig):
     """
     Enable downloading and caching of data files.
 
+    This plugin behaves like a limited dictionary, with datadir_mgr[item] returning a path
+    to a file extant in the most specfic scope (out of global, module, [class], [function].
+    If item does not exist, an exception is raised.
+
     Inspired by the `pytest-datadir-ng plugin <https://github.com/Tblue/pytest-datadir-ng>`_,
     it implements the same directory hierarchy.
     """
